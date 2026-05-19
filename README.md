@@ -9,7 +9,7 @@
 - ✅ 支持文本和图片的剪贴板共享
 - ✅ 热键快速操作,后台常驻
 - ✅ 自动处理多种编码格式 (UTF-8/GBK)
-- ✅ 跨平台支持 (Windows/Linux/Mac/Android/iOS)
+- ✅ Windows 平台专用
 
 ---
 
@@ -45,11 +45,11 @@ python hotkey_daemon.py
 修改 `hotkey_daemon.py` 中的 FTP 连接参数:
 
 ```python
-IP = "your.ftp.server.com"     # FTP 服务器地址
+IP = "10.90.4.11"              # FTP 服务器地址
 PORT = 21                      # FTP 端口
-USER = "your_username"         # FTP 用户名
-PWD = "your_password"          # FTP 密码
-REMOTE_DIR = "/path/to/remote/dir"  # 远程目录
+USER = "admin"                 # FTP 用户名
+PWD = "admin"                  # FTP 密码
+REMOTE_DIR = "/public_exchange/xxx/temp"  # 远程目录
 REMOTE_FILE = "clipboard.txt"  # 剪贴板文件名
 ```
 
@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 
 **依赖包**:
-- `pywin32` (Windows 剪贴板和热键支持)
+- `pywin32` (Windows 剪贴板和热键支持，仅 Windows 平台可用)
 
 ### FTP 服务器
 
@@ -83,10 +83,10 @@ pip install -r requirements.txt
 | 平台 | 状态 | 说明 |
 |------|------|------|
 | Windows | ✅ 完整支持 | 支持热键守护进程 |
-| Linux | ✅ 支持 | 使用 `clip_mac_linux.py` |
-| Mac OS | ✅ 支持 | 使用 `clip_mac_linux.py` |
-| Android | ✅ 支持 | 需要 QPython + androidhelper 模块 |
-| iOS | ✅ 支持 | 需要 Pythonista + clipboard 模块 |
+| Linux | ❌ 不支持 | 当前版本仅支持 Windows |
+| Mac OS | ❌ 不支持 | 当前版本仅支持 Windows |
+| Android | ❌ 不支持 | 当前版本仅支持 Windows |
+| iOS | ❌ 不支持 | 当前版本仅支持 Windows |
 
 ---
 
