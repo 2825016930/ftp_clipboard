@@ -45,11 +45,11 @@ python hotkey_daemon.py
 修改 `hotkey_daemon.py` 中的 FTP 连接参数:
 
 ```python
-IP = "10.90.4.11"              # FTP 服务器地址
+IP = "your.ftp.server.com"     # FTP 服务器地址
 PORT = 21                      # FTP 端口
-USER = "admin"                 # FTP 用户名
-PWD = "admin"                  # FTP 密码
-REMOTE_DIR = "/public_exchange/xxx/temp"  # 远程目录
+USER = "your_username"         # FTP 用户名
+PWD = "your_password"          # FTP 密码
+REMOTE_DIR = "/path/to/remote/dir"  # 远程目录
 REMOTE_FILE = "clipboard.txt"  # 剪贴板文件名
 ```
 

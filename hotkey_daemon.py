@@ -19,11 +19,11 @@ import win32clipboard
 import win32con
 import win32event
 
-IP = "10.90.4.11"
+IP = "your.ftp.server.com"
 PORT = 21
-USER = "admin"
-PWD = "admin"
-REMOTE_DIR = "/public_exchange/xxx/temp"
+USER = "your_username"
+PWD = "your_password"
+REMOTE_DIR = "/path/to/remote/dir"
 REMOTE_FILE = "clipboard.txt"
 
 CLIPBOARD_WAIT_TIMEOUT = 1.5
